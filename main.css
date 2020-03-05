@@ -57,7 +57,7 @@ nav .link-wrap2 {
 }
 
 .navbar-brand1 {
-    color: red;
+    color: rgb(25, 150, 81);
 }
 
 .header {
@@ -440,10 +440,10 @@ body {
 }
 
 .info-subheading h3 {
-    font-size: 22px;
+    font-size: 26px;
     text-align: left;
     padding-left: 20px;
-    color: rgba(0, 0, 0, 0.466);
+    padding-top: 20px;
 }
 
 .info-subheading:after {
@@ -462,6 +462,7 @@ body {
     font-size: 16px;
     text-align: left;
     padding-left: 20px;
+    padding-right: 20px;
 }
 
 .info-picture {
