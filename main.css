@@ -358,7 +358,8 @@ html {
 
 .top,
 .top1,
-.top2 {
+.top2,
+.top3 {
     display: none;
     position: absolute;
     top: 10%;
@@ -368,7 +369,8 @@ html {
 
 .bottom,
 .bottom1,
-.bottom2 {
+.bottom2,
+.bottom3 {
     display: none;
     position: absolute;
     bottom: 5%;
@@ -379,7 +381,8 @@ html {
 
 #info-box,
 #info-box1,
-#info-box2 {
+#info-box2,
+#info-box3 {
     position: relative;
     width: 100%;
     padding-right: 0px;
@@ -388,7 +391,8 @@ html {
 
 .texttop,
 .texttop1,
-.texttop2 {
+.texttop2,
+.texttop3 {
     color: black;
     font-size: 20px;
 }
@@ -405,7 +409,8 @@ body {
 
 .picturediv,
 .picturediv1,
-.picturediv2 {
+.picturediv2,
+.picturediv3 {
     display: none;
     position: fixed;
     top: 0;
@@ -424,7 +429,8 @@ body {
 
 .infopicture,
 .infopicture1,
-.infopicture2 {
+.infopicture2,
+.infopicture3 {
     display: block;
     width: 90vmin;
     height: 70vmin;
@@ -480,7 +486,8 @@ body {
 
 .info-close,
 .info-close1,
-.info-close2 {
+.info-close2,
+.info-close3 {
     bottom: 17px;
     right: 20px;
     color: #bbb;
@@ -492,7 +499,8 @@ body {
 
 .textbottom,
 .textbottom1,
-.textbottom2 {
+.textbottom2,
+.textbottom3 {
     width: 210px;
     padding: 10px;
     cursor: pointer;

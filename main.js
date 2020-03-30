@@ -51,6 +51,18 @@ $(".info-close2").on("click", function() {
     closeView2()
 });
 
+$(document).ready(function() {
+
+    $("#show3").click(function() {
+        $(".picturediv3").slideDown(300);
+        //   $(".container-information").show();
+        $(".container").css({ opacity: 0.3 });
+    });
+});
+
+$(".info-close3").on("click", function() {
+    closeView3()
+});
 
 function closeView() {
     $(".picturediv").slideUp(300);
@@ -67,8 +79,13 @@ function closeView2() {
     $(".container").css({ opacity: 1 });
 }
 
+function closeView3() {
+    $(".picturediv3").slideUp(300);
+    $(".container").css({ opacity: 1 });
+}
+
 $(document).mouseup(function(e) {
-    var popup = $(".picturediv, .picturediv1, .picturediv2");
+    var popup = $(".picturediv, .picturediv1, .picturediv2, .picturediv3");
     if (!$('#show').is(e.target) && !popup.is(e.target) && popup.has(e.target).length == 0) {
         popup.slideUp(300);
         $(".container").css({ opacity: 1 });
@@ -198,6 +215,42 @@ $(document).ready(function() {
         $(".bottom2").stop().slideDown("slow"),
             function() {
                 $("#info-box2").addClass("hovered");
+            }
+    });
+});
+
+$(document).ready(function() {
+    $('#info-box3').mouseleave(function(event) {
+        $('.image3').stop().animate({
+            opacity: '1',
+
+        }, 1000, function() { //animation complete
+            $('#info-box3').removeClass('hovered');
+        });
+        $(".top3").stop().fadeOut(800),
+            function() {
+                $("#info-box3").addClass("hovered");
+            }
+        $(".bottom3").stop().slideUp("slow"),
+            function() {
+                $("#info-box3").addClass("hovered");
+            }
+    });
+    $('#info-box3').mouseover(function(event) {
+        $('.image3').stop().animate({
+            opacity: '0'
+
+
+        }, 1000, function() { //animation complete
+            $('#info-box3').addClass('hovered');
+        });
+        $(".top3").stop().fadeIn(1000),
+            function() {
+                $("#info-box3").addClass("hovered");
+            }
+        $(".bottom3").stop().slideDown("slow"),
+            function() {
+                $("#info-box3").addClass("hovered");
             }
     });
 });
