@@ -64,6 +64,19 @@ $(".info-close3").on("click", function() {
     closeView3()
 });
 
+$(document).ready(function() {
+
+    $("#show4").click(function() {
+        $(".picturediv4").slideDown(300);
+        //   $(".container-information").show();
+        $(".container").css({ opacity: 0.3 });
+    });
+});
+
+$(".info-close4").on("click", function() {
+    closeView4()
+});
+
 function closeView() {
     $(".picturediv").slideUp(300);
     $(".container").css({ opacity: 1 });
@@ -84,8 +97,13 @@ function closeView3() {
     $(".container").css({ opacity: 1 });
 }
 
+function closeView4() {
+    $(".picturediv4").slideUp(300);
+    $(".container").css({ opacity: 1 });
+}
+
 $(document).mouseup(function(e) {
-    var popup = $(".picturediv, .picturediv1, .picturediv2, .picturediv3");
+    var popup = $(".picturediv, .picturediv1, .picturediv2, .picturediv3, .picturediv4");
     if (!$('#show').is(e.target) && !popup.is(e.target) && popup.has(e.target).length == 0) {
         popup.slideUp(300);
         $(".container").css({ opacity: 1 });
@@ -251,6 +269,42 @@ $(document).ready(function() {
         $(".bottom3").stop().slideDown("slow"),
             function() {
                 $("#info-box3").addClass("hovered");
+            }
+    });
+});
+
+$(document).ready(function() {
+    $('#info-box4').mouseleave(function(event) {
+        $('.image4').stop().animate({
+            opacity: '1',
+
+        }, 1000, function() { //animation complete
+            $('#info-box4').removeClass('hovered');
+        });
+        $(".top4").stop().fadeOut(800),
+            function() {
+                $("#info-box4").addClass("hovered");
+            }
+        $(".bottom4").stop().slideUp("slow"),
+            function() {
+                $("#info-box4").addClass("hovered");
+            }
+    });
+    $('#info-box4').mouseover(function(event) {
+        $('.image4').stop().animate({
+            opacity: '0'
+
+
+        }, 1000, function() { //animation complete
+            $('#info-box4').addClass('hovered');
+        });
+        $(".top4").stop().fadeIn(1000),
+            function() {
+                $("#info-box4").addClass("hovered");
+            }
+        $(".bottom4").stop().slideDown("slow"),
+            function() {
+                $("#info-box4").addClass("hovered");
             }
     });
 });
