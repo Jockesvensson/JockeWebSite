@@ -360,7 +360,8 @@ html {
 .top1,
 .top2,
 .top3,
-.top4 {
+.top4,
+.top5 {
     display: none;
     position: absolute;
     top: 10%;
@@ -372,7 +373,8 @@ html {
 .bottom1,
 .bottom2,
 .bottom3,
-.bottom4 {
+.bottom4,
+.bottom5 {
     display: none;
     position: absolute;
     bottom: 5%;
@@ -385,7 +387,8 @@ html {
 #info-box1,
 #info-box2,
 #info-box3,
-#info-box4 {
+#info-box4,
+#info-box5 {
     position: relative;
     width: 100%;
     padding-right: 0px;
@@ -396,7 +399,8 @@ html {
 .texttop1,
 .texttop2,
 .texttop3,
-.texttop4 {
+.texttop4,
+.texttop5 {
     color: black;
     font-size: 20px;
 }
@@ -415,7 +419,8 @@ body {
 .picturediv1,
 .picturediv2,
 .picturediv3,
-.picturediv4 {
+.picturediv4,
+.picturediv5 {
     display: none;
     position: fixed;
     top: 0;
@@ -436,7 +441,8 @@ body {
 .infopicture1,
 .infopicture2,
 .infopicture3,
-.infopicture4 {
+.infopicture4,
+.infopicture5 {
     display: block;
     width: 90vmin;
     height: 70vmin;
@@ -494,7 +500,8 @@ body {
 .info-close1,
 .info-close2,
 .info-close3,
-.info-close4 {
+.info-close4,
+.info-close5 {
     bottom: 17px;
     right: 20px;
     color: #bbb;
@@ -508,7 +515,8 @@ body {
 .textbottom1,
 .textbottom2,
 .textbottom3,
-.textbottom4 {
+.textbottom4,
+.textbottom5 {
     width: 210px;
     padding: 10px;
     cursor: pointer;

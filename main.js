@@ -77,6 +77,19 @@ $(".info-close4").on("click", function() {
     closeView4()
 });
 
+$(document).ready(function() {
+
+    $("#show5").click(function() {
+        $(".picturediv5").slideDown(300);
+        //   $(".container-information").show();
+        $(".container").css({ opacity: 0.3 });
+    });
+});
+
+$(".info-close5").on("click", function() {
+    closeView4()
+});
+
 function closeView() {
     $(".picturediv").slideUp(300);
     $(".container").css({ opacity: 1 });
@@ -102,8 +115,13 @@ function closeView4() {
     $(".container").css({ opacity: 1 });
 }
 
+function closeView5() {
+    $(".picturediv5").slideUp(300);
+    $(".container").css({ opacity: 1 });
+}
+
 $(document).mouseup(function(e) {
-    var popup = $(".picturediv, .picturediv1, .picturediv2, .picturediv3, .picturediv4");
+    var popup = $(".picturediv, .picturediv1, .picturediv2, .picturediv3, .picturediv4, .picturediv5");
     if (!$('#show').is(e.target) && !popup.is(e.target) && popup.has(e.target).length == 0) {
         popup.slideUp(300);
         $(".container").css({ opacity: 1 });
@@ -305,6 +323,42 @@ $(document).ready(function() {
         $(".bottom4").stop().slideDown("slow"),
             function() {
                 $("#info-box4").addClass("hovered");
+            }
+    });
+});
+
+$(document).ready(function() {
+    $('#info-box5').mouseleave(function(event) {
+        $('.image5').stop().animate({
+            opacity: '1',
+
+        }, 1000, function() { //animation complete
+            $('#info-box5').removeClass('hovered');
+        });
+        $(".top5").stop().fadeOut(800),
+            function() {
+                $("#info-box5").addClass("hovered");
+            }
+        $(".bottom5").stop().slideUp("slow"),
+            function() {
+                $("#info-box5").addClass("hovered");
+            }
+    });
+    $('#info-box5').mouseover(function(event) {
+        $('.image5').stop().animate({
+            opacity: '0'
+
+
+        }, 1000, function() { //animation complete
+            $('#info-box5').addClass('hovered');
+        });
+        $(".top5").stop().fadeIn(1000),
+            function() {
+                $("#info-box5").addClass("hovered");
+            }
+        $(".bottom5").stop().slideDown("slow"),
+            function() {
+                $("#info-box5").addClass("hovered");
             }
     });
 });
